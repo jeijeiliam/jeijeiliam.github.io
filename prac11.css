@@ -120,6 +120,38 @@ iframe {
     nav ul {
         display: none;
     }
+
+    .dynamic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dynamic img {
+        width: 100%;
+    }
+}
+
+@media (min-width:800px) {
+
+.dynamic {
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: 5%;
+}
+
+.dynamic img {
+    width: 20%;
+    height: auto;
+    flex: 1;
+}
+
+.dynamic .text {
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
 }
 
 /*to unhide menu items*/
@@ -171,25 +203,7 @@ h3 {
     font-size: large;
 }
 
-.dynamic {
-    display: flex;
-    background: rgba(0, 0, 0, 0.4);
-    margin-bottom: 5%;
-}
 
-.dynamic img {
-    width: 20%;
-    height: auto;
-    flex: 1;
-}
-
-.dynamic .text {
-    flex: 1;
-    padding: 1em;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-}
 
 .video-section {
     position: relative;
