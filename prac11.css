@@ -129,6 +129,10 @@ iframe {
     .dynamic img {
         width: 100%;
     }
+
+    #qrcode{
+        display:none;
+    }
 }
 
 @media (min-width:800px) {
@@ -151,6 +155,11 @@ iframe {
     text-align: center;
     align-items: center;
     align-content: center;
+}
+
+#qrcode{
+    width:50%;
+    height: auto;
 }
 }
 
@@ -312,4 +321,10 @@ h3.secondaryTXT{
     max-width: 600px;
     margin: auto;
     color:aliceblue
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    
 }
