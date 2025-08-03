@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- background video that you see immediately when you open the page -->
+    <section class="video-section">
+        <div class="video-bg">
+            <iframe src="https://www.youtube.com/embed/BA6FMClXbR0?autoplay=1&mute=1&controls=0&loop=1&playlist=BA6FMClXbR0"
+                allow="autoplay; encrypted-media" allowfullscreen id="bgVideo"></iframe>
+        </div>
+        <div class="video-content">
+            <h1>Feelings in Photography</h1>
+        </div>
+    </section>
+
+
+
+    <nav> <!--menu system-->
+        <button id="hamIcon">Open Menu</button>
+        <ul>
+            <li><button id="page0btn">Home</button></li>
+            <li><button id="page1btn">Colours</button></li>
+            <li><button id="page2btn">Resolution and Artifacts</button></li>
+            <li><button id="page3btn">Shutter Speed</button></li>
+        </ul>
+    </nav>
+    <main id="pagecontainer">
+        <section class="page" id="page0">
+            <div class="dynamic">
+                <img src="images/feelings.jpg" alt="feelings photo" title="feelings photo">
+                <div class="text">
+                    <h2>F E E L I N G S</h2>
+                    <h3>Feelings in photography can be different from person to person.</h3>
+
+                    <h3 class="secondaryTXT">However, there are some similarities for all of them. This includes
+                        Colours, Artifacts and Shutter speed. Each takes a
+                        part in making photos feel more like memories, giving feelings to photos.</h3>
+                </div>
+            </div>
+
+            <div class="dynamic">
+                <div class="text">
+                    <h2>R E T R O</h2>
+                    <h3>Cameras designed from the 1990s to 2010s were made to replicate colours as close to real life,
+                        however the technological advancements for cameras were not adequate,
+                        leading to imperfection in colours, random artifacting etc.</h3>
+
+                    <h3 class="secondaryTXT"> With those flaws built into the cameras,
+                        it did not stop people from buying them to record their own
+                        personal memories.</h3>
+                </div>
+                <img src="images/artifacts.jpg" alt="retro photo" title="retro photo">
+            </div>
+
+            <article>
+                <h2><a href="https://en.wikipedia.org/wiki/Wabi-sabi" target="_blank">W A B I &ensp; S A B I</a></h2>
+
+                <h3>WABI SABI is the beauty of imperfection, similar in how no human being is perfect.</h3>
+                <h3>WABI SABI in photography is imperfection in the images taken, reflected by how we as humans
+                    remember differently from how we experienced the moment.</h3>
+                </article>
+
+            <article>
+                <h2><a href="https://en.wikipedia.org/wiki/Kaizen" target="_blank">K A I Z E N</a></h2>
+                <h3>Kaizen is continuous improvement, a philosophy that exists in everyone even if you dont
+                    realise</h3>
+                <h3>When time passes, all cameras get improved with the continuous improvement from R&D,
+                    Which also makes modern cameras closer to perfection and losing their perks of being imperfect and "human".</h3>
+            </article>
+
+        </section>
+
+        <section class="page" id="page1">
+            <div class="dynamic">
+                <div class="text">
+                    <h2>C O L O U R S</h2>
+                    <h3>Colours can change the vibe and perception of the photos taken. Here are some examples:</h3>
+                </div>
+        
+                <div class="img-compare-container">
+                    <img src="images/colours1.jpg" alt="colours1" title="colours1" class="img-compare-bottom">
+                    <div class="img-compare-overlay" id="imgCompareOverlay">
+                        <img src="images/colours2.jpg" alt="colours2" title="colours2">
+                    </div>
+                    <div class="img-compare-divider" id="imgCompareDivider"></div>
+                    <input type="range" min="0" max="100" value="50" id="imgCompareSlider" class="img-compare-slider">
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="page2">
+            <div class="dynamic">
+                <img src="images/artifacts.jpg" alt="artifacts photo" title="artifacts photo">
+                <div class="text">
+                    <h2>A R T I F A C T S</h2>
+                    <h3>Artifacts are imperfections in photos and video that can be caused by compression, low
+                        resolution, or other factors.</h3>
+                    <h3>Artifacts can add a sense of nostalgia and authenticity to photos and video, similar to how we as humans retain our memories imperfectly.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="page3">
+            <div class="dynamic">
+                <img src="images/shutter.jpg" alt="shutter photo" title="shutter photo">
+                <div class="text">
+                    <h2>S H U T T E R &ensp; S P E E D</h2>
+                    <h3>low shutter speed is used in most 1990s to 2010s consumer cameras to combat underexposure of the photo or video.</h3> 
+                    <h3>Having a slower shutter speed also adds in motion blur. photos that can showcase how having different
+                    shutter speeds can add in motion blur(more similar to how we see things in motion)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- short quiz -->
+        <section id="quiz">
+            <h2>Short questions</h2>
+            <fieldset>
+                <legend>What contributes to Feelings in photography?</legend>
+                <label><input type="radio" name="q1" value="colours">Colours</label>
+                <label><input type="radio" name="q1" value="artifacts">Artifacts</label>
+                <label><input type="radio" name="q1" value="shutter">Shutter Speed</label>
+                <label><input type="radio" name="q1" value="all">All of the above</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is WABI SABI?</legend>
+                <label><input type="radio" name="q2" value="imperfection">Imperfection</label>
+                <label><input type="radio" name="q2" value="perfection">Perfection</label>
+                <label><input type="radio" name="q2" value="nostalgia">Nostalgia</label>
+            </fieldset>
+            <fieldset>
+                <legend>Why is low Shutter Speed used in older cameras?</legend>
+                <label><input type="radio" name="q3" value="underexposure">To combat underexposure</label>
+                <label><input type="radio" name="q3" value="overexposure">To combat overexposure</label>
+                <label><input type="radio" name="q3" value="motion">To add motion blur</label>
+            </fieldset>
+            <button id="btnSubmit">Submit</button>
+            <h3 id="scorebox">Not submitted</h3>
+        </section>
+
+        <!-- minigame -->
+        <article>
+            <h2>Click on the image to get nostalgia</h2>
+            <div id="minigameArea">
+                <img id="minigame" src="images/minigame.jpg" alt="minigame image" title="minigame image">
+            </div>
+            <h3 id="scoreBox">nostaglia gained: 0</h3>
+            <button id="resetBtn">Reset</button>
+        </article>
+
+        <!-- qr code that disappears in mobile view -->
+        <footer>
+            <img src="images/qrcode.png" alt="QR Code" title="QR Code" id="qrcode">
+        </footer>
+    </main>
+
+</body>
+
+</html>
